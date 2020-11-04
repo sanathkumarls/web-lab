@@ -22,9 +22,9 @@
          }
         input[type="button"]{
             border-radius: 10px;
-            background-color:#ff4456;
-            color: black;
-            border-color: #ff4456;
+            background-color:black;
+            color: white;
+            border-color: grey;
             width: 100%;
             height: 100%;
             font-size: 30px;
@@ -32,17 +32,17 @@
     </style>
     <script>
           function disp(val){
-              document.getElementById('sdm').value+=val;
+              document.getElementById('cal').value+=val;
 
           }
           function clr(){
-              document.getElementById('sdm').value=" ";
+              document.getElementById('cal').value=" ";
           }
 
           function solve(){
-             let x= document.getElementById('sdm').value;
+             let x= document.getElementById('cal').value;
              let y=eval(x);
-             document.getElementById("sdm").value=y
+             document.getElementById("cal").value=y
           }
     </script>
 </head>
@@ -56,7 +56,7 @@
             <input type="button" value="CE" onclick="clr()">
         </td>
         <td colspan="3">
-            <input type="text" id="sdm">
+            <input type="text" id="cal">
         </td>
     </tr>
     <!-- creating buttons and assign values to it-->
